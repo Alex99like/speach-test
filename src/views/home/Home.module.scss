@@ -1,0 +1,52 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: $background-gradient;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    background-color: #151515;
+    padding: 20px;
+    border-radius: 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    textarea {
+      resize: none;
+      height: 80%;
+      border-radius: 5px;
+      background-color: #262626;
+      border: none;
+      outline: none;
+      font-size: 22px;
+      padding: 10px;
+      color: #ffffff;
+    }
+
+    .speech {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 30px;
+      background: linear-gradient(45deg, #460F71, #628EFF);
+      border-radius: 10px;
+      border: none;
+      padding: 5px 0;
+      cursor: pointer;
+      transition: .2s all;
+
+      &:hover {
+        box-shadow: 0 0 0 2px #8800ff;
+      }
+
+      &:active {
+        transform: translateY(3px);
+      }
+    }
+  }
+}
